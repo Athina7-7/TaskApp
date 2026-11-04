@@ -17,7 +17,7 @@ describe('Validación de vulnerabilidad XSS', () => {
     cy.get('#taskList h1').should('not.exist');
 
     // Debe mostrarse como texto plano (escapado)
-    cy.get('#taskList li')
+    cy.get('#taskList l')
       .should('contain.text', '<h1>TAREA MALICIOSA</h1>');
 
   });
